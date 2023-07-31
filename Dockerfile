@@ -19,6 +19,7 @@ RUN apt-get update \
 		texlive-lang-german \
 		texlive-plain-generic \
 		texlive-luatex \
+		default-jre \
 		biber \
 		xz-utils \
 		python \

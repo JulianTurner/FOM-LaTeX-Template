@@ -51,5 +51,10 @@
                 "%DOCFILE%"
             ]
         }
-    ]
+    ],
+    "cSpell.enableFiletypes": [
+        "latex"
+    ],
+    "cSpell.language": "en,de-DE",
+    "cSpell.enabled": true
 }
