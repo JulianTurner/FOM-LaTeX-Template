@@ -1,9 +1,11 @@
 \section{Grundlagen}
+Dieses Kapitel soll den Leser mit den Grundlagen vertraut machen, welche für das Verständnis der Arbeit notwendig sein könnten.
+
 
 \subsection{Websites}
-Eine Webseite ist ein \ac{HTML} Dokument welche im \gls{browser} dargestellt werden kann. \footcite[Vgl.][Seite 27]{Robbins2018}
-Ein \ac{HTML} Dokument besteht aus \ac{HTML} Elementen welche den Inhalt der Webseite beschreiben und \ac{CSS} Elementen welche das Aussehen der Webseite beschreiben. \footcite[Vgl.][Seite 29]{Robbins2018}
-Das rendern der Webseite im \gls{browser} passiert auf einmal. Bei langsamen Verbindungen oder wenn die Webseite viele Medien Inhalte wie Bilder oder Videos beinhaltet kann es zu einer Verzögerung kommen bis die Webseite vollständig dargestellt wird. \footcite[Vgl.][Seite 31]{Robbins2018}
+Eine Webseite ist ein \ac{HTML} Dokument welche im \gls{browser} dargestellt werden kann.
+Ein \ac{HTML} Dokument besteht aus \ac{HTML} Elementen welche den Inhalt der Webseite beschreiben und \ac{CSS} Elementen welche das Aussehen der Webseite beschreiben.
+Das rendern der Webseite im \gls{browser} passiert auf einmal. Bei langsamen Verbindungen oder wenn die Webseite viele Medien Inhalte wie Bilder oder Videos beinhaltet kann es zu einer Verzögerung kommen bis die Webseite vollständig dargestellt wird. \footcite[Vgl.][Seite 27 - 31]{Robbins2018}
 Grundsätzlich kann zwischen Statischen und Dynamischen Webseiten unterschieden werden.
 Statische Webseiten zeigen immer den gleichen Inhalt an, während Dynamische Webseiten den Inhalt je nach Anfrage an den \gls{server} ändern.
 \newline
@@ -22,22 +24,36 @@ Selbst nachdem die \gls{latenz} wieder auf das vorherige Niveau gesunken ist, bl
 Um eine gute Performance zu erreichen muss die Webseite mit einer geringen \gls{latenz} und einem hohen \gls{durchsatz} schnell heruntergeladen werden
 und effizient mit geringem \gls{overhead} im \gls{browser} dargestellt werden.
 
+\subsection{\ac{SEO}}
+\ac{SEO} ist ein Prozess, bei dem die Sichtbarkeit einer Webseite in den Suchergebnissen einer Suchmaschine verbessert wird um ein höheres Ranking bei einer Suchmaschine zu erreichen,
+wodurch mehr Nutzer die Webseite besuchen.
+Da \ac{SEO} ein Sammelbegriff von vielen verschiedenen Maßnahmen ist, kann es nicht als einzelne Maßnahme betrachtet werden.
+Ein Teil von \ac{SEO} ist die Optimierung welche auf der Webseite stattfindet.
+Dazu gehört die Optimierung der \ac{HTML} Elemente auf \gls{keyword}, welche dann von der \gls{suchmaschine} gelesen und gefunden werden kann.
+Neben den \gls{keyword} wird auch die Verlinkung der Webseite zu anderen internen und externen Webseiten von einer \gls{suchmaschine} betrachtet.
+Die Verlinkung zu anderen Webseiten wird als Vertrauenswürdigkeit der Webseite gewertet und hat einen Einfluss auf das Ranking der Webseite.
+Bei der internen Verlinkung wird die Struktur der Webseite betrachtet und wie die einzelnen Seiten miteinander verlinkt sind, was der \gls{suchmaschine} hilft die Webseite schneller und besser zu indizieren.
+\footcite[Vgl.][Seite 5]{John2016}
+\newline
+Mit \ac{SEO} wird die Webseite für Suchmaschinen optimiert, damit die Webseite in den Suchergebnissen einer Suchmaschine weiter oben angezeigt wird.
+
+
 \subsection{traditionelle Websites}
 Eine traditionelle Webseite ist eine dynamische Webseite welche aus mehren \ac{HTML} Seiten besteht und auf dem \gls{server} ausgeführt und erzeugt wird,
 Daten aus einer Datenbank bezieht und für jeden Nutzer personalisiert werden kann.
 Eine typische Interaktion mit einer traditionellen Webseite startet mit dem Anfragen der Webseite vom \gls{browser} an den \gls{server}.
 Der \gls{server} verarbeitet die Anfrage mit einem \gls{controller} und sendet eine Antwort mit dem ausgefüllten \ac{HTML} \gls{template} an den \gls{browser} als Antwort zurück.
-Der \gls{browser} rendert die Webseite und zeigt die Webseite dem Nutzer an. \footcite[Vgl. ][Seite 32]{Robbins2018}
+Der \gls{browser} rendert die Webseite und zeigt die Webseite dem Nutzer an. \footcite[Vgl.][Seite 32]{Robbins2018}
 Bei einer erneuten Interaktion mit der Webseite resultiert dies in eine neue Anfrage an den \gls{server} welcher die Anfrage wieder mit einem \gls{controller} verarbeitet und darauf mit
-den neuen Daten das \ac{HTML} \gls{template} befüllt und dem \gls{browser} als Antwort zurück sendet und daraufhin die Webseite neu lädt. \footcite[Vgl. ][Seite 5]{Scott2015}
+den neuen Daten das \ac{HTML} \gls{template} befüllt und dem \gls{browser} als Antwort zurück sendet und daraufhin die Webseite neu lädt. \footcite[Vgl.][Seite 5]{Scott2015}
 \newline
 Eine Traditionelle Webseite ist eine Sammlung von Webseiten die auf dem \gls{server} ausgeführt werden und bei jeder Interaktion eine neue Webseite vom \gls{server} an den \gls{browser} gesendet wird.
 
 \subsection{\ac{SPA}}
 Eine \ac{SPA} ist eine vollständige Anwendung, welche in einer einzigen Webseite läuft, wodurch der Code welcher zum befüllten der \ac{HTML} \gls{template}
-mit Daten verantwortlich ist, vom Server auf den \gls{browser} verschoben wurde. \footcite[Vgl.][Seite 4]{Scott2015}
+mit Daten verantwortlich ist, vom Server auf den \gls{browser} verschoben wurde.
 Durch diese Verschiebung werden die Anfragen an den \gls{server} werden die Daten welche der \gls{browser} mit dem \gls{server} austauscht auf die Nutzdaten reduziert
-und das neu Laden der Webseite im \gls{browser} überflüssig macht. \footcite[Vgl.][Seite 7]{Scott2015}
+und das neu Laden der Webseite im \gls{browser} überflüssig macht.
 Der \gls{browser} lädt die Webseite nur initial und lädt bei einer Interaktion mit der Webseite nur die Daten vom \gls{server} und befüllt damit die \ac{HTML} \gls{template} im \gls{browser}.
-Die Webseite startet initial nur mit einer leeren \gls{struktur} und wartet auf die Daten vom \gls{server} um die \gls{struktur} mit den Daten zu befüllen, der Einstiegspunkt einer \ac{SPA}.
-Das initiale Laden der Webseite stellt den einzigen Zeitpunkt dar, an dem die Webseite vollständig geladen wird. \footcite[Vgl.][Seite 8]{Scott2015}
+Die Webseite startet initial nur mit einer leeren \gls{struktur} und wartet auf die Daten vom \gls{server} um die \gls{struktur} mit den Daten zu befüllen, der Einstiegspunkt einer \ac{SPA}. \footcite[Vgl.][Seite 23]{Doguhan2020}
+Das initiale Laden der Webseite stellt den einzigen Zeitpunkt dar, an dem die Webseite vollständig geladen wird. \footcite[Vgl.][Seite 4 - 8]{Scott2015}
