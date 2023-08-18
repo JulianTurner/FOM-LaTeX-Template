@@ -18,11 +18,11 @@ Bei einer erneuten Interaktion mit der Webseite resultiert dies in eine neue Anf
 den neuen Daten das \ac{HTML} \gls{template} befüllt und dem \gls{browser} als Antwort zurück sendet und daraufhin die Webseite neu lädt. \footcite[Vgl.][Seite 5]{Scott2015}
 
 \subsection{\ac{SPA}}
-Eine \ac{SPA} ist eine vollständige Anwendung, welche in einer einzigen Webseite läuft, wodurch der Code welcher zum befüllten der \ac{HTML} \gls{template}
+Eine \ac{SPA} ist eine eigenständige Anwendung, welche in einer einzigen Webseite läuft, wodurch der Code welcher zum befüllten der \ac{HTML} \gls{template}
 mit Daten verantwortlich ist, vom Server auf den \gls{browser} verschoben wurde.
-Durch diese Verschiebung werden die Anfragen an den \gls{server} werden die Daten welche der \gls{browser} mit dem \gls{server} austauscht auf die Nutzdaten reduziert
-und das neu Laden der Webseite im \gls{browser} überflüssig macht.
-Der \gls{browser} lädt die Webseite nur initial und lädt bei einer Interaktion mit der Webseite nur die Daten vom \gls{server} und befüllt damit die \ac{HTML} \gls{template} im \gls{browser}.
+Durch diese Verschiebung wird die Kommunikation zwischen der Anwendungen und dem \gls{server}auf die Nutzdaten reduziert.
+Dadurch das die \ac{HTML} Dokumente nun im \gls{browser} nun aktualisiert werden wird das neu Laden der Webseite im \gls{browser} überflüssig.
+Der \gls{browser} lädt die Webseite initial komplett, inklusiver aller Tools die für den Betrieb der Webseite notwendig sind und lädt bei einer Interaktion mit der Webseite nur die Daten vom \gls{server} nach und befüllt mit der Antwort damit die \ac{HTML} \gls{template} im \gls{browser}.
 Die Webseite startet initial nur mit einer leeren \gls{struktur} und wartet auf die Daten vom \gls{server} um die \gls{struktur} mit den Daten zu befüllen, der Einstiegspunkt einer \ac{SPA}. \footcite[Vgl.][Seite 23]{Doguhan2020}
 Das initiale Laden der Webseite stellt den einzigen Zeitpunkt dar, an dem die Webseite vollständig geladen wird. \footcite[Vgl.][Seite 4 - 8]{Scott2015}
 
@@ -53,4 +53,4 @@ Eine Traditionelle Webseite ist eine Sammlung von Webseiten die auf dem \gls{ser
 Eine \ac{SPA} ist eine Webseite welche nur einmal vom \gls{server} an den \gls{browser} gesendet wird und bei jeder Interaktion auf Nutzdaten beschränkt und die Inhalte ohne erneutes Laden der Webseite präsentiert.
 Um eine gute Performance zu erreichen muss die Webseite mit einer geringen \gls{latenz} und einem hohen \gls{durchsatz} schnell heruntergeladen werden
 und effizient mit geringem \gls{overhead} im \gls{browser} dargestellt werden.
-Mit \ac{SEO} wird die Webseite für Suchmaschinen optimiert, damit die Webseite in den Suchergebnissen einer Suchmaschine weiter oben angezeigt wird.
+Mit \ac{SEO} wird die Webseite für Suchmaschinen optimiert, damit die Webseite in den Suchergebnissen einer Suchmaschine als relevanter eingestuft wird.
