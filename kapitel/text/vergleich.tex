@@ -1,4 +1,5 @@
 \section{Stärken und Schwächen von \ac{SPA} und traditionellen Websites}
+Dieses Kapitel zeigt die Stärken und Schwächen von \ac{SPA} und traditionellen Websites.
 % Eine \ac{SPA} kann einzelne Teile der Webseite unabhängig von anderen Teilen der Webseite dynamisch aktualisieren.
 % Da eine \ac{SPA} bereits die \gls{struktur} der Webseite hat und ausschließlich über Nutzdaten mit dem \gls{server} kommuniziert,
 % muss keine neue Webseite vom Browser angefragt werden. \footcite[Vgl.][Seite 12]{Scott2015}
@@ -9,33 +10,52 @@
 
 
 
-Stärken von \ac{SPA} sind:
+\paragraph*{Stärken von \ac{SPA}:}
+\begin{itemize}
+    \item Die gesamte Anwendung in den \gls{browser} geladen und wird nicht neu geladen, wenn ein Nutzer mit der Seite interagiert. \footcite[Vgl. ][Seite 3]{Smith2022} \footcite[Vgl.][Seite 7]{Flanagan2011}
+    \item Die Anwendung kann sich auf die Kommunikation mit Nutzdaten beschränken. \footcite[Vgl. ][Seite 3]{Smith2022} \footcite[Vgl.][Seite 13]{Flanagan2011}
+    \item Die Nutzerinteraktionen werden direkt im Browser verarbeitet und die Webseite muss nicht neu geladen werden \footcite[Vgl. ][Seite 3]{Smith2022} \footcite[Vgl.][Seite 12]{Flanagan2011}
+    \item Eine \ac{SPA} kann einzelne Teile der Webseite unabhängig von anderen Teilen der Webseite dynamisch aktualisieren \footcite[Vgl. ][Seite 3]{Smith2022} \footcite[Vgl.][Seite 9]{Flanagan2011}
+\end{itemize}
 
-Eine \ac{SPA} kann die Last den \gls{server} reduzieren, da die gesamte Anwendung in den Browser geladen wird und der \gls{server} nur noch Nutzdaten an den Browser senden muss.
-Das trägt dazu bei den \gls{server} zu entlasten und die Performance zu verbessern, was sich bei steigender Nutzerzahl positiv auf den \gls{durchsatz} auswirkt.
-Zusätzlich kann eine \ac{SPA} die Performance verbessern, da die Anwendung sich auf die Kommunikation mit Nutzdaten beschränkt und den \gls{overhead} reduziert.
-Die Nutzerinteraktionen werden direkt im Browser verarbeitet und die Webseite muss nicht neu geladen werden, was die Nutzererfahrung verbessert.
-Eine \ac{SPA} kann einzelne Teile der Webseite unabhängig von anderen Teilen der Webseite dynamisch aktualisieren, was einen nahtlosen und flüssigen Übergang zwischen den einzelnen Seiten ermöglicht.
 
-Schwächen von \ac{SPA} sind:
+\paragraph*{Schwächen von \ac{SPA}:}
 
-Eine \ac{SPA} hat eine schlechtere \ac{SEO}, da die Webseite nur aus einer Seite besteht und mit Javascript geladen und aktualisiert wird.
-Dies führt dazu das Suchmaschinen die Webseite nicht richtig indexieren können und die Webseite schlechter in den Suchergebnissen platziert wird.
-Die initiale Performance einer \ac{SPA} kann schlechter sein, da die gesamte Anwendung vom Browser geladen werden muss, was gerade bei leistungsschwachen Geräten zu langen Ladezeiten führen kann und schlecht für die Nutzererfahrung ist.
-Eine \ac{SPA} ist aufwendiger zu entwickeln, da sie eine komplexere Softwarearchitektur benötigt.
-Eine \ac{SPA} bindet sich an ein bestimmtes Framework und ist dadurch weniger flexibel.
+\begin{itemize}
+    \item Die Webseite muss geladen werden um den Inhalt zu sehen.
+    \item Die komplette Anwendung muss vom \gls{browser} geladen werden, bevor der Nutzer mit der Anwendung interagieren kann.
+    \item Eine \ac{SPA} ist aufwendig zu entwickeln, da sie eine komplexere Softwarearchitektur benötigt. \footcite[Vgl. ][Seite 4]{Smith2022} \footcite[Vgl.][Seite 15]{Flanagan2011}
+    \item Eine \ac{SPA} bindet sich an ein bestimmtes Framework. \footcite[Vgl. ][Seite 4]{Smith2022}
+\end{itemize}
 
-Stärken von traditionellen Websites sind:
+% Eine \ac{SPA} hat eine schlechtere \ac{SEO}, da die Webseite nur aus einer Seite besteht und mit Javascript geladen und aktualisiert wird.
+% Dies führt dazu das Suchmaschinen die Webseite nicht richtig indexieren können und die Webseite schlechter in den Suchergebnissen platziert wird.
+% Die initiale Performance einer \ac{SPA} kann schlechter sein, da die gesamte Anwendung vom Browser geladen werden muss, was gerade bei leistungsschwachen Geräten zu langen Ladezeiten führen kann und schlecht für die Nutzererfahrung ist.
+% Eine \ac{SPA} ist aufwendiger zu entwickeln, da sie eine komplexere Softwarearchitektur benötigt.
+
+
+% Eine \ac{SPA} bindet sich an ein bestimmtes Framework und ist dadurch weniger flexibel.
+
+
+
+\paragraph*{Stärken von traditionellen Websites:}
 
 Traditionelle Websites haben eine bessere \ac{SEO} da jede Seite einzeln geladen wird und der Inhalt der Seite direkt im \ac{HTML} steht,
 dies kann von einer \gls{suchmaschine} besser indexiert werden und die Webseite wird besser in den Suchergebnissen platziert.
 Traditionelle Websites haben eine bessere initiale Performance gerade bei leistungsschwachen Geräten, da die gesamte Anwendung nicht vom Browser geladen werden muss.
 Traditionelle Websites sind einfacher zu entwickeln da sie auch mit einfacheren Softwarearchitekturen entwickelt werden können, was die Entwicklungskosten senkt und die Flexibilität erhöht.
+\footcite[Vgl. ][Seite 4]{Smith2022}
+
 Traditionelle Websites sind flexibler da sie nicht an ein bestimmtes Framework gebunden sein müssen, was eine größere Auswahl an Technologien ermöglicht.
 
-Schwächen von traditionellen Websites sind:
+\paragraph*{Schwächen von traditionellen Websites:}
 
 Traditionelle Websites haben eine schlechtere Performance da die Anwendung sich nicht auf die Kommunikation mit Nutzdaten beschränkt und den overhead erhöht.
+\footcite[Vgl. ][Seite 8]{Smith2022}
+
 Traditionelle Websites müssen die Seite neu laden nachdem ein Nutzer mit der Seite interagiert hat, was ein \ac{UI} Fresh verursacht und schlecht für die Nutzererfahrung ist.
+\footcite[Vgl. ][Seite 3]{Smith2022}
+
 Traditionelle Websites müssen immer nach einer Nutzer die ganze Seite neu laden, was zu \ac{UI} Freshes führt und schlecht für die Nutzererfahrung ist und die Performance verschlechtert.
+\footcite[Vgl. ][Seite 8]{Smith2022}
 
