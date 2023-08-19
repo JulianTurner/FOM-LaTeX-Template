@@ -1,5 +1,7 @@
 \section{Grundlagen}
 Dieses Kapitel soll den Leser mit den Grundlagen vertraut machen, welche für das Verständnis der Arbeit notwendig sein könnten.
+Dazu gehören die Grundlagen von Webseiten mit einer Einführung in die traditionellen Webseiten und \ac{SPA}.
+Zusätzlich werden die Grundlagen von Performance und \ac{SEO} erläutert.
 
 \subsection{Websites}
 Eine Webseite ist ein \ac{HTML} Dokument welche im \gls{browser} dargestellt werden kann.
@@ -9,7 +11,7 @@ Grundsätzlich kann zwischen Statischen und Dynamischen Webseiten unterschieden 
 Statische Webseiten zeigen immer den gleichen Inhalt an, während Dynamische Webseiten den Inhalt je nach Anfrage an den \gls{server} ändern.
 
 \subsection{traditionelle Websites}
-Eine traditionelle Webseite ist eine dynamische Webseite welche aus mehren \ac{HTML} Seiten besteht und auf dem \gls{server} ausgeführt und erzeugt wird,
+Eine traditionelle Webseite ist eine dynamische Webseite welche aus mehren \ac{HTML} Seiten besteht und auf dem \gls{server} erzeugt wird,
 Daten aus einer Datenbank bezieht und für jeden Nutzer personalisiert werden kann.
 Eine typische Interaktion mit einer traditionellen Webseite startet mit dem Anfragen der Webseite vom \gls{browser} an den \gls{server}.
 Der \gls{server} verarbeitet die Anfrage mit einem \gls{controller} und sendet eine Antwort mit dem ausgefüllten \ac{HTML} \gls{template} an den \gls{browser} als Antwort zurück.
@@ -21,8 +23,9 @@ den neuen Daten das \ac{HTML} \gls{template} befüllt und dem \gls{browser} als 
 Eine \ac{SPA} ist eine eigenständige Anwendung, welche in einer einzigen Webseite läuft, wodurch der Code welcher zum befüllten der \ac{HTML} \gls{template}
 mit Daten verantwortlich ist, vom Server auf den \gls{browser} verschoben wurde.
 Durch diese Verschiebung wird die Kommunikation zwischen der Anwendungen und dem \gls{server}auf die Nutzdaten reduziert.
-Dadurch das die \ac{HTML} Dokumente nun im \gls{browser} nun aktualisiert werden wird das neu Laden der Webseite im \gls{browser} überflüssig.
+Dadurch dass die \ac{HTML} Dokumente nun im \gls{browser} nun aktualisiert werden wird das neu Laden der Webseite im \gls{browser} überflüssig.
 Der \gls{browser} lädt die Webseite initial komplett, inklusiver aller Tools die für den Betrieb der Webseite notwendig sind und lädt bei einer Interaktion mit der Webseite nur die Daten vom \gls{server} nach und befüllt mit der Antwort damit die \ac{HTML} \gls{template} im \gls{browser}.
+Eine \ac{SPA} kann auch Teile der Anwendung aktualisieren ohne die gesamte Webseite neu zu laden. \footcite[Vgl.][Seite 14]{Flanagan2011}
 Die Webseite startet initial nur mit einer leeren \gls{struktur} und wartet auf die Daten vom \gls{server} um die \gls{struktur} mit den Daten zu befüllen, der Einstiegspunkt einer \ac{SPA}. \footcite[Vgl.][Seite 23]{Doguhan2020}
 Das initiale Laden der Webseite stellt den einzigen Zeitpunkt dar, an dem die Webseite vollständig geladen wird. \footcite[Vgl.][Seite 4 - 8]{Scott2015}
 
@@ -40,16 +43,16 @@ Selbst nachdem die \gls{latenz} wieder auf das vorherige Niveau gesunken ist, bl
 \ac{SEO} ist ein Prozess, bei dem die Sichtbarkeit einer Webseite in den Suchergebnissen einer Suchmaschine verbessert wird um ein höheres Ranking bei einer Suchmaschine zu erreichen,
 wodurch mehr Nutzer die Webseite besuchen.
 Da \ac{SEO} ein Sammelbegriff von vielen verschiedenen Maßnahmen ist, kann es nicht als einzelne Maßnahme betrachtet werden.
-Ein Teil von \ac{SEO} ist die Optimierung welche auf der Webseite stattfindet.
-Dazu gehört die Optimierung der \ac{HTML} Elemente auf \gls{keyword}, welche dann von der \gls{suchmaschine} gelesen und gefunden werden kann.
-Neben den \gls{keyword} wird auch die Verlinkung der Webseite zu anderen internen und externen Webseiten von einer \gls{suchmaschine} betrachtet.
+Ein Teil von \ac{SEO} ist die Optimierung welche auf der Webseite stattfindet. \footcite[Vgl][Seite 13]{Robbins2018}
+Dazu gehört die Optimierung der \ac{HTML} Elemente auf Schlagwörter, welche dann von der \gls{suchmaschine} gelesen und gefunden werden kann.
+Neben den Schlagwörtern wird auch die Verlinkung der Webseite zu anderen internen und externen Webseiten von einer \gls{suchmaschine} betrachtet.
 Die Verlinkung zu anderen Webseiten wird als Vertrauenswürdigkeit der Webseite gewertet und hat einen Einfluss auf das Ranking der Webseite.
 Bei der internen Verlinkung wird die Struktur der Webseite betrachtet und wie die einzelnen Seiten miteinander verlinkt sind, was der \gls{suchmaschine} hilft die Webseite schneller und besser zu indizieren.
 \footcite[Vgl.][Seite 5]{John2016}
 
-\section*{Zusammenfassung des Kapitels}
+\subsection*{Zusammenfassung der Grundlagen}
 Eine Webseite ist ein \ac{HTML} Dokument welche im \gls{browser} dargestellt werden kann.
-Eine Traditionelle Webseite ist eine Sammlung von Webseiten die auf dem \gls{server} ausgeführt werden und bei jeder Interaktion eine neue Webseite vom \gls{server} an den \gls{browser} gesendet wird.
+Eine Traditionelle Webseite ist eine Sammlung von Webseiten die auf dem \gls{server} erzeugt werden und bei jeder Interaktion eine neue Webseite vom \gls{server} an den \gls{browser} gesendet wird.
 Eine \ac{SPA} ist eine Webseite welche nur einmal vom \gls{server} an den \gls{browser} gesendet wird und bei jeder Interaktion auf Nutzdaten beschränkt und die Inhalte ohne erneutes Laden der Webseite präsentiert.
 Um eine gute Performance zu erreichen muss die Webseite mit einer geringen \gls{latenz} und einem hohen \gls{durchsatz} schnell heruntergeladen werden
 und effizient mit geringem \gls{overhead} im \gls{browser} dargestellt werden.
