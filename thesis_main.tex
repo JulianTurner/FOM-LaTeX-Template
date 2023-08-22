@@ -347,8 +347,8 @@ mincrossrefs = 1
 %-----------------------------------
 % Abbildungsverzeichnis
 %-----------------------------------
-\listoffigures
-\newpage
+% \listoffigures
+% \newpage
 %-----------------------------------
 % Tabellenverzeichnis
 %-----------------------------------
@@ -405,11 +405,11 @@ mincrossrefs = 1
 \addcontentsline{toc}{section}{\AppendixName} %Den Anhang ohne Nummer zum Inhaltsverzeichnis hinzufügen
 
 \begin{appendices}
-% Nachfolgende Änderungen erfolgten aufgrund von Issue 163
-\makeatletter
-\renewcommand\@seccntformat[1]{\csname the#1\endcsname:\quad}
-\makeatother
-\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
+	% Nachfolgende Änderungen erfolgten aufgrund von Issue 163
+	\makeatletter
+	\renewcommand\@seccntformat[1]{\csname the#1\endcsname:\quad}
+	\makeatother
+	\addtocontents{toc}{\protect\setcounter{tocdepth}{0}} %
 	\renewcommand{\thesection}{\AppendixName\ \arabic{section}}
 	\renewcommand\thesubsection{\AppendixName\ \arabic{section}.\arabic{subsection}}
 	\input{kapitel/anhang/anhang}
