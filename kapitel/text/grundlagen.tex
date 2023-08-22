@@ -6,8 +6,8 @@
 % \subsection{Websites}
 % Eine Webseite ist ein \ac{HTML} Dokument welche im \gls{browser} dargestellt werden kann.
 % Ein \ac{HTML} Dokument besteht aus \ac{HTML} Elementen welche den Inhalt der Webseite strukturieren und zusätzlich aus \ac{CSS} Elementen welche das Aussehen der Webseite beschreiben.
-% Das rendern der Webseite im \gls{browser} passiert auf einmal. Bei langsamen Verbindungen oder wenn die Webseite viele Medien Inhalte wie Bilder oder Videos beinhaltet kann es zu einer Verzögerung kommen bis die Webseite vollständig dargestellt wird. \footcite[Vgl.][Seite 27 - 31]{Robbins2018}
-% Grundsätzlich kann zwischen Statischen und Dynamischen Webseiten unterschieden werden.\footcite[Vgl.][Seite 25 - 27]{Robbins2018}
+% Das rendern der Webseite im \gls{browser} passiert auf einmal. Bei langsamen Verbindungen oder wenn die Webseite viele Medien Inhalte wie Bilder oder Videos beinhaltet kann es zu einer Verzögerung kommen bis die Webseite vollständig dargestellt wird. \cite[Seite 27 - 31]{Robbins2018}
+% Grundsätzlich kann zwischen Statischen und Dynamischen Webseiten unterschieden werden.\cite[Seite 25 - 27]{Robbins2018}
 % Statische Webseiten zeigen immer den gleichen Inhalt an, während Dynamische Webseiten den Inhalt je nach Anfrage an den \gls{server} ändern.
 
 % \subsection{traditionelle Websites}
@@ -15,9 +15,9 @@
 % Daten aus einer Datenbank bezieht und für jeden Nutzer personalisiert werden kann.
 % Eine typische Interaktion mit einer traditionellen Webseite startet mit dem Anfragen der Webseite vom \gls{browser} an den \gls{server}.
 % Der \gls{server} verarbeitet die Anfrage mit einem \gls{controller} und sendet eine Antwort mit dem ausgefüllten \ac{HTML} \gls{template} an den \gls{browser} als Antwort zurück.
-% Der \gls{browser} rendert die Webseite und zeigt die Webseite dem Nutzer an. \footcite[Vgl.][Seite 32]{Robbins2018}
+% Der \gls{browser} rendert die Webseite und zeigt die Webseite dem Nutzer an. \cite[Seite 32]{Robbins2018}
 % Bei einer erneuten Interaktion mit der Webseite resultiert dies in eine neue Anfrage an den \gls{server} welcher die Anfrage wieder mit einem \gls{controller} verarbeitet und darauf mit
-% den neuen Daten das \ac{HTML} \gls{template} befüllt und dem \gls{browser} als Antwort zurück sendet und daraufhin die Webseite neu lädt. \footcite[Vgl.][Seite 5]{Scott2015}
+% den neuen Daten das \ac{HTML} \gls{template} befüllt und dem \gls{browser} als Antwort zurück sendet und daraufhin die Webseite neu lädt. \cite[Seite 5]{Scott2015}
 
 % \subsection{\ac{SPA}}
 % Eine \ac{SPA} ist eine eigenständige Anwendung, welche in einer einzigen Webseite läuft, wodurch der Code welcher zum befüllten der \ac{HTML} \gls{template}
@@ -25,30 +25,30 @@
 % Durch diese Verschiebung wird die Kommunikation zwischen der Anwendungen und dem \gls{server}auf die Nutzdaten reduziert.
 % Dadurch dass die \ac{HTML} Dokumente nun im \gls{browser} nun aktualisiert werden wird das neu Laden der Webseite im \gls{browser} überflüssig.
 % Der \gls{browser} lädt die Webseite initial komplett, inklusiver aller Tools die für den Betrieb der Webseite notwendig sind und lädt bei einer Interaktion mit der Webseite nur die Daten vom \gls{server} nach und befüllt mit der Antwort damit die \ac{HTML} \gls{template} im \gls{browser}.
-% Eine \ac{SPA} kann auch Teile der Anwendung aktualisieren ohne die gesamte Webseite neu zu laden. \footcite[Vgl.][Seite 14]{Flanagan2011}
-% Die Webseite startet initial nur mit einer leeren \gls{struktur} und wartet auf die Daten vom \gls{server} um die \gls{struktur} mit den Daten zu befüllen, der Einstiegspunkt einer \ac{SPA}. \footcite[Vgl.][Seite 23]{Doguhan2020}
-% Das initiale Laden der Webseite stellt den einzigen Zeitpunkt dar, an dem die Webseite vollständig geladen wird. \footcite[Vgl.][Seite 4 - 8]{Scott2015}
+% Eine \ac{SPA} kann auch Teile der Anwendung aktualisieren ohne die gesamte Webseite neu zu laden. \cite[Seite 14]{Flanagan2011}
+% Die Webseite startet initial nur mit einer leeren \gls{struktur} und wartet auf die Daten vom \gls{server} um die \gls{struktur} mit den Daten zu befüllen, der Einstiegspunkt einer \ac{SPA}. \cite[Seite 23]{Doguhan2020}
+% Das initiale Laden der Webseite stellt den einzigen Zeitpunkt dar, an dem die Webseite vollständig geladen wird. \cite[Seite 4 - 8]{Scott2015}
 
 % \subsection{Performance}
 % Unter Performance einer Webseite versteht man, wie schnell eine Webseite heruntergeladen und im \gls{browser} dargestellt wird.
-% Es gibt unter anderem Faktoren wie \gls{latenz}, Effizienz und \gls{durchsatz} welche die Performance einer Webseite beeinflussen. \footcite[Vgl.][Seite 53]{Killelea2002}
+% Es gibt unter anderem Faktoren wie \gls{latenz}, Effizienz und \gls{durchsatz} welche die Performance einer Webseite beeinflussen. \cite[Seite 53]{Killelea2002}
 % Die Performance wird bestimmt durch die Größe der benötigten Dateien und der Anzahl der Anfragen an den \gls{server}
-% und hat einen kritischen Einfluss wie Nutzer Zugang zu einer Webseite erhalten und mit der Webseite interagieren. \footcite[Vgl.][Seite 44]{Robbins2018}
+% und hat einen kritischen Einfluss wie Nutzer Zugang zu einer Webseite erhalten und mit der Webseite interagieren. \cite[Seite 44]{Robbins2018}
 % Ein Experiment von \Citeauthor{Google2009} im Jahr 2009 hat ergeben dass eine Erhöhung der \gls{latenz} bei der Websuche zwischen 100 und 400 Millisekunden die tägliche
 % Anzahl der Suchanfragen pro Nutzer um 0,2 \% bis 0,6\% reduziert.
 % Neben den Ausbleiben der Suchanfragen führten die Nutzer weniger Suchvorgänge durch, je höher \gls{latenz} wurde.
-% Selbst nachdem die \gls{latenz} wieder auf das vorherige Niveau gesunken ist, blieben die Suchanfragen noch für einige Zeit aus. \footcite[Vgl.][Seite 1]{Google2009}
+% Selbst nachdem die \gls{latenz} wieder auf das vorherige Niveau gesunken ist, blieben die Suchanfragen noch für einige Zeit aus. \cite[Seite 1]{Google2009}
 
 % \subsection{\ac{SEO}}
 % \ac{SEO} ist ein Prozess, bei dem die Sichtbarkeit einer Webseite in den Suchergebnissen einer Suchmaschine verbessert wird um ein höheres Ranking bei einer Suchmaschine zu erreichen,
 % wodurch mehr Nutzer die Webseite besuchen.
 % Da \ac{SEO} ein Sammelbegriff von vielen verschiedenen Maßnahmen ist, kann es nicht als einzelne Maßnahme betrachtet werden.
-% Ein Teil von \ac{SEO} ist die Optimierung welche auf der Webseite stattfindet. \footcite[Vgl][Seite 13]{Robbins2018}
+% Ein Teil von \ac{SEO} ist die Optimierung welche auf der Webseite stattfindet. \cite[Vgl][Seite 13]{Robbins2018}
 % Dazu gehört die Optimierung der \ac{HTML} Elemente auf Schlagwörter, welche dann von der \gls{suchmaschine} gelesen und gefunden werden kann.
 % Neben den Schlagwörtern wird auch die Verlinkung der Webseite zu anderen internen und externen Webseiten von einer \gls{suchmaschine} betrachtet.
 % Die Verlinkung zu anderen Webseiten wird als Vertrauenswürdigkeit der Webseite gewertet und hat einen Einfluss auf das Ranking der Webseite.
 % Bei der internen Verlinkung wird die Struktur der Webseite betrachtet und wie die einzelnen Seiten miteinander verlinkt sind, was der \gls{suchmaschine} hilft die Webseite schneller und besser zu indizieren.
-% \footcite[Vgl.][Seite 5]{John2016}
+% \cite[Seite 5]{John2016}
 
 % \subsection*{Zusammenfassung der Grundlagen}
 % Eine Webseite ist ein \ac{HTML} Dokument welche im \gls{browser} dargestellt werden kann.
@@ -66,28 +66,28 @@ Eine Webseite ist ein \ac{HTML}-Dokument, das in einem \gls{browser} dargestellt
 Sie besteht aus \ac{HTML}-Elementen, die den Inhalt strukturieren, und kann optional auch \ac{CSS}-Elementen enthalten, welche das Design definieren.
 Das vollständige Rendering einer Webseite kann bei langsamen Verbindungen oder bei hohem Medieninhalt verzögert sein.
 Webseiten können als statisch oder dynamisch kategorisiert werden.
-Statische Webseiten zeigen konstanten Inhalt, während dynamische Webseiten ihren Inhalt je nach Serveranfrage variieren können.\footcite[Vgl.][Seite 25 - 31]{Robbins2018}
+Statische Webseiten zeigen konstanten Inhalt, während dynamische Webseiten ihren Inhalt je nach Serveranfrage variieren können.\cite{Robbins2018}
 
 \subsection{Traditionelle Websites}
 Traditionelle Webseiten sind dynamisch und bestehen aus mehreren \ac{HTML}-Seiten.
 Sie werden serverseitig generiert, können Daten aus Datenbanken abrufen und personalisiert werden.
-Eine Interaktion mit solchen Webseiten führt zu einer neuen Serveranfrage und einem erneuten Laden der Seite.\footcite[Vgl.][Seite 32]{Robbins2018}\footcite[Vgl.][Seite 5]{Scott2015}
+Eine Interaktion mit solchen Webseiten führt zu einer neuen Serveranfrage und einem erneuten Laden der Seite.\cite{Robbins2018}\cite{Scott2015}
 
 \subsection{\ac{SPA}}
 \ac{SPA}s sind eigenständige Anwendungen, die innerhalb einer einzigen Webseite laufen.
 Hierbei wird der Code, der für das Befüllen des \ac{HTML}-Templates verantwortlich ist, vom Server in den \gls{browser} verlagert.
-Dies reduziert die Kommunikation zwischen Anwendung und Server und macht das erneute Laden der Webseite überflüssig.\footcite[Vgl.][Seite 14]{Flanagan2011}\footcite[Vgl.][Seite 23]{Doguhan2020}
+Dies reduziert die Kommunikation zwischen Anwendung und Server und macht das erneute Laden der Webseite überflüssig.\cite{Flanagan2011}\cite{Doguhan2020}
 
 \subsection{Performance}
 Die Performance einer Webseite bezieht sich darauf, wie schnell sie geladen und dargestellt wird.
 Faktoren wie \gls{latenz}, Effizienz und \gls{durchsatz} beeinflussen die Performance.
-Eine gute Performance ist entscheidend für die Nutzererfahrung.\footcite[Vgl.][Seite 53]{Killelea2002}
-Ein Experiment von \Citeauthor{Google2009} zeigte, dass eine erhöhte \gls{latenz} die Suchanfragen signifikant reduziert.\footcite[Vgl.][Seite 1]{Google2009}
+Eine gute Performance ist entscheidend für die Nutzererfahrung.\cite{Killelea2002}
+Ein Experiment von \Citeauthor{Google2009} zeigte, dass eine erhöhte \gls{latenz} die Suchanfragen signifikant reduziert.\cite{Google2009}
 
 \subsection{\ac{SEO}}
 \ac{SEO} zielt darauf ab, die Sichtbarkeit einer Webseite in einer \gls{suchmaschine} zu erhöhen.
 Es umfasst eine Vielzahl von Maßnahmen, einschließlich der Optimierung von \ac{HTML}-Elementen und der Verlinkung.
-Eine gute \ac{SEO} verbessert das Ranking einer Webseite in Suchergebnissen.\footcite[Vgl.][Seite 5]{John2016}
+Eine gute \ac{SEO} verbessert das Ranking einer Webseite in Suchergebnissen.\cite{John2016}
 
 \subsection*{Zusammenfassung der Grundlagen}
 Webseiten sind \ac{HTML}-Dokumente, die im \gls{browser} dargestellt werden.
