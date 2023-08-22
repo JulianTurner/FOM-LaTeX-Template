@@ -2,44 +2,74 @@
 In diesem Kapitel werden die Ergebnisse der Arbeit diskutiert, die Forschungsfrage beantwortet und die Implikationen der Ergebnisse erläutert.
 
 \subsection{Zusammenfassung}
-In dieser Arbeit wurden die Stärken und Schwächen von \ac{SPA} und traditionellen Webseiten untersucht.
-Die Ergebnisse zeigen das eine \ac{SPA} ihre Stärken bei der Entwicklung von komplexen Webanwendungen ausspielen kann und
-gerade bei häufigen Nutzerinteraktionen eine bessere Nutzererfahrung bietet in dem sie sowohl den \gls{overhead} in der Kommunikation mit dem \gls{server} reduziert sondern auch noch ohne \ac{UI} refresh auskommt.\footcite[Vgl.][Seite 5]{Solovei2018} \footcite[Vgl.][Seite 143]{Irudayaraj2019}
-Eine \ac{SPA} kann auch ohne den \gls{server} funktionieren, nachdem alle Daten zur Verfügung stehen \footcite[Vgl.][Seite 6]{Solovei2018}
-Doch eine \ac{SPA} ist komplexer zu entwickeln und benötigt eine komplexere Softwarearchitektur als eine traditionelle Webseite. \footcite[Vgl.][Seite 4]{Smith2022} \footcite[Vgl.][Seite 15]{Flanagan2011}
+% In dieser Arbeit wurden die Stärken und Schwächen von \ac{SPA} und traditionellen Webseiten untersucht.
+% Die Ergebnisse zeigen das eine \ac{SPA} ihre Stärken bei der Entwicklung von komplexen Webanwendungen ausspielen kann und
+% gerade bei häufigen Nutzerinteraktionen eine bessere Nutzererfahrung bietet in dem sie sowohl den \gls{overhead} in der Kommunikation mit dem \gls{server} reduziert sondern auch noch ohne \ac{UI} refresh auskommt.
+% Eine \ac{SPA} kann auch ohne den \gls{server} funktionieren, nachdem alle Daten zur Verfügung stehen
+% Doch eine \ac{SPA} ist komplexer zu entwickeln und benötigt eine komplexere Softwarearchitektur als eine traditionelle Webseite.
+Diese Arbeit hat die Vor- und Nachteile von \ac{SPA} im Vergleich zu traditionellen Webseiten beleuchtet.
+Es wurde festgestellt, dass \ac{SPA} insbesondere bei komplexen Webanwendungen Vorteile bietet, indem sie eine reibungslose Nutzererfahrung ermöglichen, den Kommunikations-\gls{overhead} mit dem \gls{server} minimieren und ohne vollständige \ac{UI}-Aktualisierung auskommen.\footcite[Vgl.][Seite 5]{Solovei2018} \footcite[Vgl.][Seite 143]{Irudayaraj2019}
+Allerdings erfordert die Entwicklung einer \ac{SPA} eine tiefere Kenntnis spezifischer Frameworks und Architekturen, was sie komplexer macht als die Erstellung traditioneller Webseiten.\footcite[Vgl.][Seite 4]{Smith2022} \footcite[Vgl.][Seite 15]{Flanagan2011}
 
 
 \subsection{Beantwortung der Forschungsfrage}
-Die Forschungsfrage lautet: Welche Herausforderungen haben Entwickler von \ac{SPA} Websites im Vergleich zu traditionellen Mehrseiten-Websites?
+Eine Implementierung einer \ac{SPA} bringt sowohl Herausforderungen als auch Vorteile mit sich.
+Durch die Analyse dieser Arbeit konnten folgende Herausforderungen und Vorteile identifiziert werden.
 
-Die Entwickler von \ac{SPA} Websites haben im Vergleich zu traditionellen Mehrseiten-Websites ganz andere Herausforderungen.
-\subsubsection{Herausforderungen von \ac{SPA} Websites}
-\paragraph*{Ladezeit}
-Die initiale Ladezeit der \ac{SPA} gering zu halten um von Anfang an eine gute Performance der Webseite zu bietenV
-\paragraph*{Framework}
-Eine \ac{SPA} wird mit einem Framework umgesetzt, welches nicht ohne weiteres ausgetauscht werden kann. Sollte das
-Framework nicht mehr weiterentwickelt werden, muss die \ac{SPA} auf ein anderes Framework migriert werden um es aktuell zu halten.
-\paragraph*{Logik im Browser}
-Die Logik der \ac{SPA} läuft im Browser und nicht auf dem Server. Dies kann zu Problemen führen, wenn der Browser des Nutzers
-nicht alle Funktionen unterstützt. Hier muss entweder auf die Nutzergruppe verzichtet werden oder eine alternative Lösung für den Rückfall gefunden werden.
-V\paragraph*{\ac{URL}}
-Das Routing der \ac{URL} ist komplexer als bei traditionellen Webseiten. Hier muss sichergestellt werden, dass die \ac{URL}
-auf den richtigen Zustand der \ac{SPA} zeigtV
-\paragraph*{Komplexität}
-Die Entwicklung einer \ac{SPA} ist komplexer als die Entwicklung einer traditionellen Webseite. Hier muss sichergestellt werden,
-dass die Entwickler die Komplexität der \ac{SPA} beherrschen.
+\subsubsection{Vorteile}
+\begin{enumerate}
+    \item schnelle und reibungslose Nutzererfahrung, da die Webseite nicht bei jeder Nutzerinteraktion eine neue Seite laden muss und nur Teile der Webseite aktualisiert
+    \item \gls{overhead} wird aus der Kommunikation mit dem \gls{server} reduziert, da nur Nutzdaten zwischen \gls{server} und \gls{browser} ausgetauscht werden
+    \item kann auch ohne Verbindung zum \gls{server} funktionieren, der \gls{server} wird nicht zur Präsentation der Daten benötigt wird
+\end{enumerate}
+
+\subsubsection{Herausforderungen}
+\begin{enumerate}
+    \item Ladezeit: Es ist entscheidend, die initiale Ladezeit einer \ac{SPA} zu minimieren, um von Beginn an eine hohe Performance zu gewährleisten.
+    \item Framework-Abhängigkeit: \ac{SPA}s sind oft eng mit einem bestimmten Framework verbunden. Ein Wechsel oder eine Migration kann komplex und zeitaufwendig sein.
+    \item Browser-Logik: Da die Logik einer \ac{SPA} im Browser ausgeführt wird, können Kompatibilitätsprobleme mit bestimmten Browsern auftreten.
+    \item \ac{URL} Routing: Das Routing in einer \ac{SPA} kann komplexer sein als bei traditionellen Webseiten, insbesondere wenn es darum geht, den aktuellen Zustand der Anwendung korrekt widerzuspiegeln.
+    \item Entwicklungskomplexität: Die Entwicklung einer \ac{SPA} erfordert ein tieferes Verständnis und Fachwissen als traditionelle Webseiten.
+\end{enumerate}
+
+
+% Die Entwickler von \ac{SPA} Websites haben im Vergleich zu traditionellen Mehrseiten-Websites ganz andere Herausforderungen.
+% \subsubsection{Herausforderungen von \ac{SPA} Websites}
+% \paragraph*{Ladezeit}
+% Die initiale Ladezeit der \ac{SPA} gering zu halten um von Anfang an eine gute Performance der Webseite zu bietenV
+% \paragraph*{Framework}
+% Eine \ac{SPA} wird mit einem Framework umgesetzt, welches nicht ohne weiteres ausgetauscht werden kann. Sollte das
+% Framework nicht mehr weiterentwickelt werden, muss die \ac{SPA} auf ein anderes Framework migriert werden um es aktuell zu halten.
+% \paragraph*{Logik im Browser}
+% Die Logik der \ac{SPA} läuft im Browser und nicht auf dem Server. Dies kann zu Problemen führen, wenn der Browser des Nutzers
+% nicht alle Funktionen unterstützt. Hier muss entweder auf die Nutzergruppe verzichtet werden oder eine alternative Lösung für den Rückfall gefunden werden.
+% V\paragraph*{\ac{URL}}
+% Das Routing der \ac{URL} ist komplexer als bei traditionellen Webseiten. Hier muss sichergestellt werden, dass die \ac{URL}
+% auf den richtigen Zustand der \ac{SPA} zeigtV
+% \paragraph*{Komplexität}
+% Die Entwicklung einer \ac{SPA} ist komplexer als die Entwicklung einer traditionellen Webseite. Hier muss sichergestellt werden,
+% dass die Entwickler die Komplexität der \ac{SPA} beherrschen.
 
 \subsection{Implikationen der Ergebnisse}
-Viele Webseiten haben keine starke Nutzerinteraktionen sondern präsentieren eher statische Informationen und können daher
-einfacher als eine traditionelle Webseite umgesetzt werden.
-Ein Benefit der traditionellen Webseite ist, dass sie von Suchmaschinen besser indexiert werden können, da sie keine Logik benötigen um Daten anzuzeigen.
-Da keine Logik im \gls{browser} ausgeführt werden muss, kann die Webseite gerade auf leistungsschwächeren Geräten schneller geladen werden.
+Traditionelle Webseiten eignen sich besonders für Inhalte mit geringer Interaktivität, da sie einfacher zu entwickeln sind und von Suchmaschinen besser indexiert werden können.
+Ihre Performance kann auf leistungsschwächeren Geräten überlegen sein, da keine Logik im \gls{browser} erforderlich ist.
 
-Eine \ac{SPA} bietet eine bessere Nutzererfahrung bei komplexen Webanwendungen mit vielen Nutzerinteraktionen und benötigen kein \ac{UI} Refresh nach einer Nutzerinteraktion.
-Des weiteren kann eine \ac{SPA} Daten direkt vom \gls{server} laden und muss nicht die komplette Webseite neu laden was sich für den Nutzer flüssiger nahtlos anfühlt.
-Auch kann eine \ac{SPA} im Offline Modus funktionieren, wenn sie dafür ausgelegt wurde.
+Eine \ac{SPA} hingegen bietet bei Webanwendungen mit intensiver Nutzerinteraktion ein überlegenes Nutzererlebnis.
+Sie können Daten dynamisch und nahtlos vom \gls{server} abrufen und anzeigen, ohne die gesamte Seite neu laden zu müssen.
+Wenn eine \ac{SPA} entsprechend entwickelt wurde, kann sie auch ohne Verbindung zum \gls{server} funktionieren.
 
-Eine traditionelle Webanwendung bieten sich an wenn man eine Webseite mit vielen Informationen und wenig Nutzerinteraktionen erstellen möchte.
-Eine \ac{SPA} bietet sich an wenn man eine Webseite mit vielen Nutzerinteraktionen und einem flüssigen Nutzererlebnis erstellen möchte.
-Sollte die Webseite ohne Logik in dem \gls{browser} laufen, fällt die Entscheidung auf eine traditionelle Webseite hingegen
-soll die Webseite Inhalte ohne den \gls{server} darstellen, fällt die Entscheidung auf eine \ac{SPA}.
+Die Wahl zwischen einer \ac{SPA} und einer traditionellen Webseite sollte daher auf der Art der Anwendung, den spezifischen Anforderungen und dem beabsichtigten Publikum basieren.
+Wenn eine Webseite primär Informationszwecken dient und wenig Interaktivität erfordert, könnte eine traditionelle Webseite die bessere Wahl sein.
+Für Anwendungen, die eine hohe Interaktivität und ein nahtloses Nutzererlebnis erfordern, wäre eine \ac{SPA} vorzuziehen.
+% Webseiten die keine starke Nutzerinteraktionen haben sondern eher statische Informationen präsentierten können einfacher als eine traditionelle Webseite umgesetzt werden.
+% Ein Benefit der traditionellen Webseite ist, dass sie von Suchmaschinen besser indexiert werden können, da sie keine Logik benötigen um Daten anzuzeigen.
+% Da keine Logik im \gls{browser} ausgeführt werden muss, kann die Webseite gerade auf leistungsschwächeren Geräten schneller zur Anzeige gebracht werden.
+
+% Eine \ac{SPA} bietet eine bessere Nutzererfahrung bei komplexen Webanwendungen mit vielen Nutzerinteraktionen und benötigen kein \ac{UI} Refresh nach einer Nutzerinteraktion.
+% Des weiteren kann eine \ac{SPA} Daten direkt vom \gls{server} laden und muss nicht die komplette Webseite neu laden was sich für den Nutzer flüssiger nahtlos anfühlt.
+% Zusätzlich kann eine \ac{SPA} im Offline Modus funktionieren, wenn sie dafür ausgelegt wurde und alle notwendigen Daten hat.
+
+% Eine traditionelle Webanwendung bieten sich an wenn man eine Webseite mit vielen Informationen und wenig Nutzerinteraktionen erstellen möchte.
+% Eine \ac{SPA} bietet sich an wenn man eine Webseite mit vielen Nutzerinteraktionen und einem flüssigen Nutzererlebnis erstellen möchte.
+% Sollte die Webseite ohne Logik in dem \gls{browser} laufen, könnte die Entscheidung auf eine traditionelle Webseite in Betracht gezogen werden.
+% Muss die Webseite Inhalte ohne den \gls{server} darstellen, wäre eine \ac{SPA} der traditionellen Webseite vorzuziehen.
